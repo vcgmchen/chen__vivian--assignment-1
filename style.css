@@ -1,0 +1,38 @@
+body {
+    background-color: #d5d5d5;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 50px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h3 {
+    color: rgb(105, 105, 105); 
+}
+
+.container {
+    width: 1300px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    object-fit: scale-down;
+    width: 400px; 
+}
+
+img:hover {
+    
+}
+
+.fab {
+    margin: 10px;
+    color: black;
+    font-size: x-large;
+}
