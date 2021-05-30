@@ -18,6 +18,10 @@ h3 {
     color: rgb(105, 105, 105); 
 }
 
+h4 {
+    font-weight: 700;
+}
+
 .container {
     width: 1300px;
     height: 1000px;
@@ -30,14 +34,40 @@ h3 {
 img {
     object-fit: scale-down;
     width: 400px; 
+    display: block;
+    height: auto;
 }
 
-img:hover {
-    
+.overlay-container {
+    position: relative;
+    width: 400px;
+}
+
+.overlay {
+    opacity: 0;
+    background: linear-gradient(to bottom right, rbga(255, 255, 255, 0.7) 0%, rgba (255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 50%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-container:focus .overlay {
+    opacity: 1;
 }
 
 .fab {
     margin: 10px;
     color: black;
     font-size: x-large;
+}
+
+.fab:hover {
+    color:rgb(105, 105, 105)
 }
